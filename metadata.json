@@ -1,0 +1,6 @@
+{
+  "name": "DEVIL'S DOMAIN",
+  "description": "Premium streetwear for the rebels, the dreamers, and the different. Not made to fit in. Made to rule.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

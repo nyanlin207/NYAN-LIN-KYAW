@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', 'Noto Sans Myanmar', Georgia, serif;
+  }
+  .font-gothic {
+    font-family: 'Pirata One', 'UnifrakturMaguntia', 'MedievalSharp', cursive;
+  }
+  .font-sans-main {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Myanmar', system-ui, -apple-system, sans-serif;
+  }
+  .font-mono-tech {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .font-myanmar {
+    font-family: 'Noto Sans Myanmar', system-ui, sans-serif;
+  }
+  .font-myanmar-heading {
+    font-family: 'Noto Sans Myanmar', system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: normal;
+  }
+  .font-myanmar-body {
+    font-family: 'Noto Sans Myanmar', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: normal;
+  }
+  .font-myanmar-display {
+    font-family: 'Noto Sans Myanmar', system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.55;
+    letter-spacing: normal;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Myanmar', system-ui, -apple-system, sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar matching Devil Red & Black */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #181820;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E50914;
+}
